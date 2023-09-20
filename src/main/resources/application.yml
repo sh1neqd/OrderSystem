@@ -1,0 +1,21 @@
+server:
+  port: 7071
+
+spring:
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+  jpa:
+    open-in-view: false
+    database: POSTGRESQL
+    properties:
+      hibernate:
+        show_sql: true
+    hibernate:
+      ddl-auto: create
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/ordersystem
+    username: postgres
+    password: postgres
